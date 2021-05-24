@@ -1,0 +1,47 @@
+{
+	"name": "@seregpie/vue-chart",
+	"version": "1.1.0",
+	"description": "A simple wrapper for Chart.js.",
+	"keywords": [
+		"area",
+		"bar",
+		"canvas",
+		"chart",
+		"component",
+		"diagram",
+		"doughnut",
+		"line",
+		"pie",
+		"plugin",
+		"polar",
+		"radar",
+		"scatter",
+		"vue"
+	],
+	"license": "MIT",
+	"author": "Sergej Sintschilin <seregpie@gmail.com>",
+	"files": [],
+	"main": "index.js",
+	"repository": "github:SeregPie/VueChart",
+	"scripts": {
+		"build": "rollup -c",
+		"prepublishOnly": "npm run build",
+		"serve": "rollup -c -w"
+	},
+	"dependencies": {
+		"vue-demi": "*"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.3",
+		"@babel/preset-env": "^7.14.2",
+		"@rollup/plugin-babel": "^5.3.0",
+		"eslint": "^7.27.0",
+		"eslint-config-seregpie": "^1.0.2",
+		"rollup": "^2.49.0",
+		"rollup-plugin-terser": "^7.0.2"
+	},
+	"peerDependencies": {
+		"chart.js": "^3",
+		"vue": "^2 || ^3"
+	}
+}
